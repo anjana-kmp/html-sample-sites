@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML SOLUTION</title>
+</head>
+<style>
+body{
+            height: 90%;
+            width: 90%;
+            position: absolute;
+
+
+        }
+        .container{
+            height:inherit ;
+            width: 80%;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;  
+            padding: 20px;          
+        }
+        .rectanglebox{
+           
+            border: 3px solid black;
+            display: flex;
+            flex: 2;
+            width: 20%;
+            padding: 20px;
+            justify-content: flex-end;
+            align-self: flex-end;
+            margin-bottom: 20px;
+            /* align-content: flex-end; */
+
+
+        }
+        .squarebox{
+            
+            border: 3px solid black;
+            display: flex;
+            flex: 2;
+            width: 40%;
+            padding: 10px;
+            /* align-content: flex-end; */
+
+
+
+        }
+        .insidebox{
+            border: 3px solid black;
+            width: 100px;
+            height: 100px;
+            /* align-self: flex-end;
+            justify-self: center; */
+            margin: auto 10px auto auto;
+
+
+        }
+        
+        .squarebox .insidebox{
+            margin: auto auto 10px auto;
+
+        }
+
+</style>
+<body>
+    <div class="container">
+        <div class="rectanglebox">
+            <div class="insidebox"></div>
+        </div>
+        <div class="squarebox">
+            <div class="insidebox">
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
